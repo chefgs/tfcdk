@@ -22,3 +22,70 @@ https://github.com/hashicorp/terraform-cdk/blob/main/docs/working-with-cdk-for-t
  2033  cat requirements.txt 
  2034  vi cdktf.json 
 
+============
+
+ 2017  cdktf get
+ 2019  cdktf synth
+ 2020  cdktf deploy
+
+====
+
+$ cdktf synth
+⠇ synthesizing...
+[2022-03-08T00:02:32.269] [ERROR] default - b'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n'
+
+[2022-03-08T00:02:32.270] [ERROR] default - b'!!                                                                                  !!\n'
+b'!!  This software has not been tested with node v17.6.0.                            !!\n'
+b'!!  You may to encounter runtime issues, and should switch to a supported release.  !!\n'
+b'!!                                                                                  !!\n'
+b'!!  As of the current release, supported versions of node are:                      !!\n'
+b'!!  - ^12.7.0                                                                       !!\n'
+b'!!  - ^14.5.0                                                                       !!\n'
+b'!!  - ^16.3.0                                                                       !!\n'
+b'!!                                                                                  !!\n'
+b'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n'
+Generated Terraform code for the stacks: cdkdemo-terraform
+
+$ cdktf deploy
+⠹ synthesizing...
+[2022-03-08T00:03:55.750] [ERROR] default - b'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n'
+
+[2022-03-08T00:03:55.750] [ERROR] default - b'!!                                                                                  !!\n'
+b'!!  This software has not been tested with node v17.6.0.                            !!\n'
+b'!!  You may to encounter runtime issues, and should switch to a supported release.  !!\n'
+b'!!                                                                                  !!\n'
+b'!!  As of the current release, supported versions of node are:                      !!\n'
+b'!!  - ^12.7.0                                                                       !!\n'
+b'!!  - ^14.5.0                                                                       !!\n'
+b'!!  - ^16.3.0                                                                       !!\n'
+b'!!                                                                                  !!\n'
+b'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n'
+Deploying Stack: cdkdemo-terraform
+Resources
+ ✔ AWS_INSTANCE         cdkdemo             aws_instance.cdkdemo
+
+Summary: 1 created, 0 updated, 0 destroyed.
+
+Output: cdkdemo_public_ip = 35.167.83.61
+
+
+$ cdktf destroy
+⠹ synthesizing...
+[2022-03-08T00:29:12.828] [ERROR] default - b'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n'
+
+[2022-03-08T00:29:12.829] [ERROR] default - b'!!                                                                                  !!\n'
+b'!!  This software has not been tested with node v17.6.0.                            !!\n'
+b'!!  You may to encounter runtime issues, and should switch to a supported release.  !!\n'
+b'!!                                                                                  !!\n'
+b'!!  As of the current release, supported versions of node are:                      !!\n'
+b'!!  - ^12.7.0                                                                       !!\n'
+b'!!  - ^14.5.0                                                                       !!\n'
+b'!!  - ^16.3.0                                                                       !!\n'
+b'!!                                                                                  !!\n'
+b'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n'
+Destroying Stack: cdkdemo-terraform
+Resources
+ ✔ AWS_INSTANCE         cdkdemo             aws_instance.cdkdemo
+
+Summary: 1 destroyed.
+
